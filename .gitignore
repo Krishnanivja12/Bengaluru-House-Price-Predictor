@@ -1,37 +1,4 @@
-# Python
 __pycache__/
-*.py[cod]
-*.ipynb_checkpoints
-*.pyo
-*.pyd
+*.pyc
 *.pkl
-*.joblib
-
-# Environment files
 .env
-.venv/
-env/
-venv/
-*.env
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
-
-# IDE / Editor folders
-.vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Docker (if using)
-*.dockerignore
-
-# Streamlit cache
-.streamlit/config.toml
-.streamlit/secrets.toml
-
