@@ -1,10 +1,24 @@
+
 import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
+import os
+os.system("pip install gdown")
+import gdown
 
-# Load model (must be a pipeline with encoder inside)
-model = pickle.load(open("random_forest_model.pkl", "rb"))
+# ----------- Download Model from Google Drive ------------
+file_id = "1lg5iXEX3www0hJw_wuCmbCikPE_PGi6N"
+url = f"https://drive.google.com/uc?id={file_id}"
+output = "random_forest_model.pkl"
+
+if not os.path.exists(output):
+    with st.spinner("Downloading ML model..."):
+        gdown.download(url, output, quiet=False)
+
+# ----------- Load the Model ----------------
+with open(output, "rb") as file:
+    model = pickle.load(file)
 
 # Define valid location options (only those used during training)
 location_options = [
