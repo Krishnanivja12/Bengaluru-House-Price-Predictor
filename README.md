@@ -39,3 +39,12 @@ This project predicts housing prices in Bengaluru based on features like square 
 
 **Krishna Nivja**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/krishnanivja/)
+
+
+## 🚀 How to Run Locally
+
+### 📥 1. Clone the Repository
+```bash
+git clone https://github.com/Krishnanivja12/Bengaluru-House-Price-Predictor.git
+streamlit run app.py
+
