@@ -4,6 +4,7 @@ This project predicts housing prices in Bengaluru based on features like square 
 
 ## 🔧 Tech Stack
 
+
 - Python  
 - Scikit-learn  
 - Pandas, NumPy  
